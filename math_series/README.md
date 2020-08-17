@@ -12,7 +12,9 @@ The program basically returns both Fibonacci series and Lucas series for any giv
 <br>
 <hr>
 
-# RP Link:
+# PR Link:
+
+https://github.com/DanaAbbadi/math-series/pull/1
 
 <br>
 <hr>
