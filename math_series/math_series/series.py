@@ -27,4 +27,6 @@ def sum_series(n,first=0,second=1):
             
     return sum_series(n-1,first,second) + sum_series(n-2,first,second)
 
-print(sum_series(7,3,9))
+def sum_series_list(list,first=0,second=1):
+    return [sum_series(num,first,second) for num in list]
+print(sum_series_list([4,5,7,3],2,1))

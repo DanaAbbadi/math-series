@@ -1,5 +1,5 @@
 from math_series import __version__
-from math_series.series import a,fib,lucas,sum_series
+from math_series.series import a,fib,lucas,sum_series,sum_series_list
 
 def test_version():
     assert __version__ == '0.1.0'
@@ -41,4 +41,14 @@ def test_sumLucas7():
 def test_sumAnyNumber():
     expected = 141
     received = sum_series(7,3,9)
+    assert expected == received
+
+def test_list_fib():
+    expected = [3, 5, 13, 2]
+    received = sum_series_list([4,5,7,3])
+    assert expected == received
+
+def test_list_lucas():
+    expected = [7, 11, 29, 4]
+    received = sum_series_list([4,5,7,3],2,1)
     assert expected == received
