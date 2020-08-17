@@ -19,7 +19,6 @@ def lucas(num):
     return lucas(num-1) + lucas(num-2)
 
 def sum_series(n,first=0,second=1):
-    print('f',first)
     if n <= 1:
         if n == 0:
             return first 
@@ -28,3 +27,4 @@ def sum_series(n,first=0,second=1):
             
     return sum_series(n-1,first,second) + sum_series(n-2,first,second)
 
+print(sum_series(7,3,9))

@@ -35,5 +35,10 @@ def test_sumfib7():
 
 def test_sumLucas7():
     expected = 29
-    received = sum_series(7,first=2,second=1)
+    received = sum_series(7,2,1)
+    assert expected == received
+
+def test_sumAnyNumber():
+    expected = 141
+    received = sum_series(7,3,9)
     assert expected == received
