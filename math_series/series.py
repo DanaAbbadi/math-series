@@ -7,7 +7,7 @@ def fib(num):
     Arguments:
         num {integer} -- the number to find the Fibonacci series for
     Output:
-        The nth Fibbonacci series 
+        The nth Fibbonacci series  
     """
     if num <= 1:
         if num == 0:
